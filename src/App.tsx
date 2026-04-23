@@ -30,7 +30,7 @@ export default function App() {
           <VantaBackground />
           
           {/* Navigation / Header */}
-          <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md border-b border-white/10">
+          <header className="fixed top-0 left-0 right-0 z-40 border-b border-white/10 backdrop-blur-md">
             <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
               <div className="font-bold text-xl tracking-tighter">FK</div>
               <nav className="hidden md:flex gap-6 text-sm font-medium text-gray-300">
@@ -59,7 +59,7 @@ export default function App() {
             <Education />
           </main>
 
-          <footer className="border-t border-white/10 backdrop-blur-md py-12 text-center relative z-20">
+          <footer className="border-t border-white/10 py-12 text-center relative z-20 backdrop-blur-md">
             <div className="flex justify-center gap-6 mb-6">
               <a href={`mailto:${resumeData.basics.email}`} className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                 <Mail size={18} /> Email

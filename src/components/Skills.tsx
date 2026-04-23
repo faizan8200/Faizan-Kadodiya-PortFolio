@@ -27,7 +27,7 @@ export const Skills: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="glass-card rounded-2xl p-6"
+            className="glass-card rounded-2xl p-6 backdrop-blur-sm"
           >
             <h3 className="text-lg font-semibold text-emerald-400 mb-4 uppercase tracking-wider text-sm">
               {skillGroup.category}

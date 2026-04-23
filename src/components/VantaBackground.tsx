@@ -44,7 +44,7 @@ export const VantaBackground = () => {
         className="pointer-events-none fixed inset-0 z-0 h-screen w-screen"
         style={{ backgroundColor: '#030315' }}
       />
-      <div className="backdrop pointer-events-none fixed inset-0 z-10" />
+      <div className="backdrop pointer-events-none fixed inset-0 z-10 backdrop-blur-sm" />
     </>
   );
 };

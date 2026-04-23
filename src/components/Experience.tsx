@@ -29,7 +29,7 @@ export const Experience: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="glass-card rounded-2xl overflow-hidden"
+            className="glass-card rounded-2xl overflow-hidden backdrop-blur-sm"
           >
             <button
               onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}

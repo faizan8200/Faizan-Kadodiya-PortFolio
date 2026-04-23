@@ -27,7 +27,7 @@ export const Projects: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="glass-card group relative rounded-2xl p-8 transition-all duration-300 hover:bg-white/10"
+            className="glass-card group relative rounded-2xl p-8 transition-all duration-300 hover:bg-white/10 backdrop-blur-sm"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
             
