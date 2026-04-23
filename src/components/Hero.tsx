@@ -9,8 +9,13 @@ export const Hero: React.FC = () => {
   };
 
   const handleDownload = () => {
-    // In a real app, this would link to a PDF
-    alert('Resume download initiated.');
+    const link = document.createElement('a');
+  link.href = '/Resume of Faizan Kadodiya.pdf';
+  link.download = 'Resume of Faizan Kadodiya.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+    alert('Download has been completed.');
   };
 
   return (
