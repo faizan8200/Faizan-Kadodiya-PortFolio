@@ -65,7 +65,7 @@ export const Education: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="border border-white/10 bg-white/5 backdrop-blur-md rounded-xl p-5 flex items-start gap-4"
+              className="glass-card rounded-xl p-5 flex items-start gap-4"
             >
               <Award className="text-yellow-400 shrink-0 mt-1" size={20} />
               <p className="text-gray-300 leading-relaxed">{cert}</p>

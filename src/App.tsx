@@ -5,7 +5,7 @@
 
 import React, { useState } from 'react';
 import { AnimatePresence } from 'motion/react';
-import { AnimatedBackground } from './components/AnimatedBackground';
+import { VantaBackground } from './components/VantaBackground';
 import { Splash } from './components/Splash';
 import { Hero } from './components/Hero';
 import { Experience } from './components/Experience';
@@ -20,17 +20,17 @@ export default function App() {
   const [showSplash, setShowSplash] = useState(true);
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans selection:bg-blue-500/30">
-      <AnimatePresence>
+    <div className="relative isolate min-h-screen bg-black text-white font-sans selection:bg-blue-500/30">
+        <AnimatePresence>
         {showSplash && <Splash onComplete={() => setShowSplash(false)} />}
       </AnimatePresence>
 
       {!showSplash && (
         <>
-          <AnimatedBackground />
+          <VantaBackground />
           
           {/* Navigation / Header */}
-          <header className="fixed top-0 left-0 right-0 z-40 bg-black/50 backdrop-blur-md border-b border-white/10">
+          <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md border-b border-white/10">
             <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
               <div className="font-bold text-xl tracking-tighter">FK</div>
               <nav className="hidden md:flex gap-6 text-sm font-medium text-gray-300">
@@ -50,7 +50,7 @@ export default function App() {
             </div>
           </header>
 
-          <main className="relative z-10">
+          <main className="relative z-20">
             <Hero />
             <Achievements />
             <Experience />
@@ -59,7 +59,7 @@ export default function App() {
             <Education />
           </main>
 
-          <footer className="border-t border-white/10 bg-black/80 backdrop-blur-md py-12 text-center relative z-10">
+          <footer className="border-t border-white/10 backdrop-blur-md py-12 text-center relative z-20">
             <div className="flex justify-center gap-6 mb-6">
               <a href={`mailto:${resumeData.basics.email}`} className="text-gray-400 hover:text-white transition-colors flex items-center gap-2">
                 <Mail size={18} /> Email

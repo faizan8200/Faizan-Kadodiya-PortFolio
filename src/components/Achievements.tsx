@@ -27,7 +27,7 @@ export const Achievements: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.1 }}
-            className="relative overflow-hidden border border-yellow-500/20 bg-gradient-to-br from-yellow-500/10 to-transparent backdrop-blur-md rounded-2xl p-8 text-center group"
+            className="glass-card relative overflow-hidden rounded-2xl p-8 text-center group"
           >
             <div className="absolute inset-0 bg-yellow-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <h3 className="text-2xl font-bold text-white mb-3">{achievement.item}</h3>
